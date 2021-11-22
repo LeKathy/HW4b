@@ -1,0 +1,98 @@
+/*
+FILE NAME: style.css
+ASSIGNMENT: Create a Dynamic Multiplication Table using JQuerys Plugins
+Kathy Le, UMass Lowell Computer Science, Kathy_Le@student.uml.edu, khle@cs.uml.edu
+Copyright (c) 2021 by Kathy Le. All rights reserved. May be freely copied or excerpted    
+for educational purposes with credit to the author. 
+    
+Project Description: The goal of this program project assignment is to further
+familiarize with HTML, CSS, and be introduced to JavaScript. In using those 
+languages, we are to create a dynamic table of multiplication, asking for
+ther user's input in four places. From the input, the table will be created
+if the requirements are met. This includes having tabs, sliders, delete button.
+File Description: This file has the style and form for the site created for the project.
+*/
+
+body { /*Setting the website background to an image that pre-existed in my desktop*/
+    background-color: whitesmoke;
+}
+
+h1 { /*Setting the Header with a better typeface and heirarchy in type font, with added underline with paddings*/
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    word-spacing: 0.25em;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-image: url("lny.gif");/*not showing up and I don't know why*/
+    border-bottom: 5px solid #e71919;
+}
+
+#dynMatrix{
+    height:350px;
+    overflow:auto;
+}
+
+form{ /*Setting the form section of the site in smaller font to better the typefont heirarchy*/
+    font-size:small;
+}
+
+div.form-group{ /*Changing the form-group's padding to ease on the web-user's eyes*/
+    padding: 10px;
+    font-size:small;
+    
+}
+
+button{ /*changing up the button's look. I wanted a round button and wanted to shift the button over for alignment, but I didn't get to it*/
+    padding: 5Spx;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+
+/*Everything below here are the table properties and the adjustments to colors and easy reading. There is a color scheme/theme associated*/
+.newtable th, .newtable td, .newtable table{
+    background-color: rgb(255, 244, 93);
+    border: 2px solid black;
+}
+
+.newtable th, .newtable td {
+    padding: 3px;
+    text-align: center;
+}
+
+#dynMatrix {
+    height: 350px;
+    overflow: auto;
+}
+
+td:nth-child(odd){
+    background:rgb(248, 212, 94);
+}
+
+td.firstCol{
+    background-color: rgb(255, 81, 81);
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+th{
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+
+th.firstRow{
+    background-color: rgb(255, 81, 81);
+}
+
+.error {
+    color: red;
+}
+
+.tabTable{
+    height:350px;
+    overflow:auto;
+}
